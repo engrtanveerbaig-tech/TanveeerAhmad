@@ -355,7 +355,7 @@ let villaNumbers = [];
 let workSummary = {};
 let workOrder = [];
 
-fetch("plaster_work.csv")
+fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQINyDgvZfeKrtOQ8Zr7hmiuTzJUjXHhZ7Ie12JmAKnd3pQORG_w-oYh-sRCJx6qegmTyIYqr4Lzoho/pub?gid=1103723857&single=true&output=csv")
 .then(res => res.text())
 .then(text => {
     csvRows = text.trim().split("\n").map(r => r.split(","));
@@ -463,3 +463,4 @@ function buildSummary(){
 
 </body>
 </html>
+
