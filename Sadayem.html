@@ -302,7 +302,7 @@ footer{
 <script>
 let csvRows=[],results=[],villaNumbers=[];
 
-fetch("plaster_work.csv").then(r=>r.text()).then(t=>{
+fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQINyDgvZfeKrtOQ8Zr7hmiuTzJUjXHhZ7Ie12JmAKnd3pQORG_w-oYh-sRCJx6qegmTyIYqr4Lzoho/pubhtml?gid=1103723857&single=true").then(r=>r.text()).then(t=>{
  csvRows=t.trim().split("\n").map(r=>r.split(","));
  loadContractors();
  loadVillas();
