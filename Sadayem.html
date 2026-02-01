@@ -302,7 +302,7 @@ footer{
 <script>
 let csvRows=[],results=[],villaNumbers=[];
 
-fetch("plaster_work.CSV").then(r=>r.text()).then(t=>{
+fetch("plaster_work.csv").then(r=>r.text()).then(t=>{
  csvRows=t.trim().split("\n").map(r=>r.split(","));
  loadContractors();
  loadVillas();
@@ -470,5 +470,6 @@ function securityLogin(){
 
 </body>
 </html>
+
 
 
